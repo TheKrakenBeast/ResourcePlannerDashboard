@@ -27,6 +27,10 @@ import { GuageChartComponent } from './charts/guage-chart/guage-chart.component'
 import { HeatMapComponent } from './charts/heat-map/heat-map.component';
 import { HorizontalBarChartComponent } from './charts/horizontal-bar-chart/horizontal-bar-chart.component';
 import { VerticalBarChartComponent } from './charts/vertical-bar-chart/vertical-bar-chart.component';
+import { LineChartComponent } from './charts/line-chart/line-chart.component';
+import { NumberCardsComponent } from './charts/number-cards/number-cards.component';
+import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
+import { PieGridComponent } from './charts/pie-grid/pie-grid.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,10 @@ import { VerticalBarChartComponent } from './charts/vertical-bar-chart/vertical-
     HeatMapComponent,
     HorizontalBarChartComponent,
     VerticalBarChartComponent,
+    LineChartComponent,
+    NumberCardsComponent,
+    PieChartComponent,
+    PieGridComponent,
   ],
   imports: [
     BrowserModule,
