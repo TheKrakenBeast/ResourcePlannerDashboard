@@ -22,11 +22,15 @@ import { DashboardOneComponent } from './dashboard/dashboard-one/dashboard-one.c
 import { DashboardTwoComponent } from './dashboard/dashboard-two/dashboard-two.component';
 import { DashboardThreeComponent } from './dashboard/dashboard-three/dashboard-three.component';
 import { DashboardFourComponent } from './dashboard/dashboard-four/dashboard-four.component';
+import { AdvPieChartComponent } from './charts/adv-pie-chart/adv-pie-chart.component';
+import { GuageChartComponent } from './charts/guage-chart/guage-chart.component';
+import { HeatMapComponent } from './charts/heat-map/heat-map.component';
+import { HorizontalBarChartComponent } from './charts/horizontal-bar-chart/horizontal-bar-chart.component';
+import { VerticalBarChartComponent } from './charts/vertical-bar-chart/vertical-bar-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { NumberCardsComponent } from './charts/number-cards/number-cards.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { PieGridComponent } from './charts/pie-grid/pie-grid.component';
-import { HeatMapComponent } from './charts/heat-map/heat-map.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +40,15 @@ import { HeatMapComponent } from './charts/heat-map/heat-map.component';
     DashboardTwoComponent,
     DashboardThreeComponent,
     DashboardFourComponent,
+    AdvPieChartComponent,
+    GuageChartComponent,
+    HeatMapComponent,
+    HorizontalBarChartComponent,
+    VerticalBarChartComponent,
     LineChartComponent,
     NumberCardsComponent,
     PieChartComponent,
     PieGridComponent,
-    HeatMapComponent
   ],
   imports: [
     BrowserModule,
