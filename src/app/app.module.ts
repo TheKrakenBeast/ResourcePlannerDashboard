@@ -18,11 +18,19 @@ import {AppSwitcher20Module} from '@carbon/icons-angular/lib/app-switcher/20';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { DashboardOneComponent } from './dashboard/dashboard-one/dashboard-one.component';
+import { DashboardTwoComponent } from './dashboard/dashboard-two/dashboard-two.component';
+import { DashboardThreeComponent } from './dashboard/dashboard-three/dashboard-three.component';
+import { DashboardFourComponent } from './dashboard/dashboard-four/dashboard-four.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    DashboardOneComponent,
+    DashboardTwoComponent,
+    DashboardThreeComponent,
+    DashboardFourComponent
   ],
   imports: [
     BrowserModule,
