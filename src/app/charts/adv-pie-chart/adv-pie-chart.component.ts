@@ -36,6 +36,7 @@ export class AdvPieChartComponent implements OnInit {
 
   onSelect(event) {
     console.log(event);
+    this.view = [800, 800];
   }
 
   onActivate(event) {
