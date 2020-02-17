@@ -5,8 +5,9 @@ import {FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 
-/* Ngx-charts imports */
+/* Charts & table imports */
 import {NgxChartsModule} from '@swimlane/ngx-charts';
+import {JSONTableModule} from 'angular-json-table';
 
 /* ibm carbon-design imports */
 import {UIShellModule} from 'carbon-components-angular';
@@ -31,6 +32,7 @@ import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { NumberCardsComponent } from './charts/number-cards/number-cards.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { PieGridComponent } from './charts/pie-grid/pie-grid.component';
+import { TableOneComponent } from './tables/table-one/table-one.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,7 @@ import { PieGridComponent } from './charts/pie-grid/pie-grid.component';
     NumberCardsComponent,
     PieChartComponent,
     PieGridComponent,
+    TableOneComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,8 @@ import { PieGridComponent } from './charts/pie-grid/pie-grid.component';
     UserAvatar20Module,
     AppSwitcher20Module,
     NgxChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    JSONTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

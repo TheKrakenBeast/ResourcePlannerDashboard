@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { multi } from '../../data';
+import {Config} from '../../config/Config';
+import {ConfigService} from '../../config/config.service';
 
 @Component({
   selector: 'app-heat-map',
@@ -7,6 +9,8 @@ import { multi } from '../../data';
   styleUrls: ['./heat-map.component.scss']
 })
 export class HeatMapComponent implements OnInit {
+  config: Config;
+  endpoint = '/open-seats-date';
 
   multi: any[];
   // view: any[] = [700, 300];
@@ -30,6 +34,34 @@ export class HeatMapComponent implements OnInit {
     Object.assign(this, {multi});
   }
 
+  ngOnInit(): void {
+  }
+
+  /*constructor(private chartService: ConfigService) {
+  }
+
+  ngOnInit() {
+    this.getData();
+  }
+
+  getData() {
+    this.chartService.getData(this.endpoint)
+      .subscribe(
+        (data: Config) => this.config = {
+          response: (data as any).response
+        });
+  }*/
+
+  /*getData() {
+    this.chartService.getData(this.endpoint)
+      .subscribe(data => {
+        data.response.map((n, i) => {
+          this..push(n[0]);
+          this.lineChartData[0]['data'].push(n[1]);
+        });
+      });
+  }*/
+
   onSelect(data): void {
     console.log('Item clicked', JSON.parse(JSON.stringify(data)));
   }
@@ -41,8 +73,4 @@ export class HeatMapComponent implements OnInit {
   onDeactivate(data): void {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
-
-  ngOnInit() {
-  }
-
 }
