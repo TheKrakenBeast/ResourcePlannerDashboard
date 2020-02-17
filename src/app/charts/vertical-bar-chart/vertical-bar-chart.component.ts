@@ -9,12 +9,12 @@ import {ConfigService} from '../../config/config.service';
 })
 export class VerticalBarChartComponent implements OnInit {
   config: Config;
-  endpoint = '/ballarat-seats';
-  view: any[] = [400, 400];
+  endpoint = '/ballarat-required-skills';
+  //view: any[] = [400, 400];
   colorScheme = {
     domain: ['#9bbfd4', '#4b9cc0', '#c2e6f1', '#607e9e', '#bfd1d7']
   };
-
+  legendPosition = 'bottom';
   constructor(private chartService: ConfigService) {
   }
 
@@ -41,4 +41,13 @@ export class VerticalBarChartComponent implements OnInit {
   onDeactivate(event) {
     console.log(event);
   }
+
+  axisFormat(val) {
+    if (val % 1 === 0) {
+      return val.toLocaleString();
+    } else {
+      return '';
+    }
+  }
+
 }

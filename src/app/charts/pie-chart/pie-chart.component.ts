@@ -9,14 +9,14 @@ import {ConfigService} from '../../config/config.service';
 })
 export class PieChartComponent implements OnInit {
   config: Config;
-  endpoint = '/ballarat-seats';
+  endpoint = '/ballarat-required-skills-most-common';
 
   // options
   gradient = true;
   showLegend = true;
   showLabels = true;
   isDoughnut = false;
-  legendPosition = 'above';
+  legendPosition = 'bottom';
 
   colorScheme = {
     domain: ['#9bbfd4', '#4b9cc0', '#0273b9', '#607e9e', '#bfd1d7', '#1a78d5']
