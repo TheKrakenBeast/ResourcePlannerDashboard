@@ -3,17 +3,17 @@ import {ConfigService} from '../../config/config.service';
 import {Config} from '../../config/Config';
 
 @Component({
-  selector: 'app-table-one',
-  templateUrl: './table-one.component.html',
-  styleUrls: ['./table-one.component.scss']
+  selector: 'app-table-two',
+  templateUrl: './table-two.component.html',
+  styleUrls: ['./table-two.component.scss']
 })
-export class TableOneComponent implements OnInit {
+export class TableTwoComponent implements OnInit {
 
   config: Config;
-  endpoint = '/open-seats-date-ballarat';
+  endpoint = '/candidate-tracking-ballarat';
   customHeaders: any = {
-    thead: ['ID', 'Title', 'Start date', 'End date'], // the Column Name in table head.
-    displayed: ['open_seat_id', 'open_seat_title', 'start_date', 'end_date'] // the data it should populate in table.
+    thead: ['ID', 'Title', 'Proposed', 'Selected', 'Status', 'Start date', 'End date'], // the Column Name in table head.
+    displayed: ['open_seat_id', 'open_seat_title', 'proposed_names', 'selected_names', 'candidate_tracking_status', 'start_date', 'end_date'] // the data it should populate in table.
   };
 
   constructor(private chartService: ConfigService) {

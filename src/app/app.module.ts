@@ -33,6 +33,7 @@ import { NumberCardsComponent } from './charts/number-cards/number-cards.compone
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { PieGridComponent } from './charts/pie-grid/pie-grid.component';
 import { TableOneComponent } from './tables/table-one/table-one.component';
+import { TableTwoComponent } from './tables/table-two/table-two.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { TableOneComponent } from './tables/table-one/table-one.component';
     PieChartComponent,
     PieGridComponent,
     TableOneComponent,
+    TableTwoComponent,
   ],
   imports: [
     BrowserModule,
